@@ -10,8 +10,8 @@ const {
 const axios = require("axios");
 const fs = require("fs");
 
-const TOKEN = "PUT_TOKEN";
-const CLIENT_ID = "PUT_CLIENT_ID";
+const TOKEN = process.env.TOKEN;
+const CLIENT_ID = process.env.CLIENT_ID;
 
 const client = new Client({
   intents: [GatewayIntentBits.Guilds]
